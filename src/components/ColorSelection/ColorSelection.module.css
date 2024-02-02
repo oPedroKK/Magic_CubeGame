@@ -1,0 +1,30 @@
+.ColorSelection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    font-size: 30px;
+    margin-block: 10px;
+
+}
+
+.ColorSelection h1 {
+    
+}
+
+.ColorSelection button {
+    font-size: 20px;
+    margin-block: 12px;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    width: 160px;
+    height: 50px;
+}
