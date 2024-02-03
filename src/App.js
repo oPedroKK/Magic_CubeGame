@@ -1,6 +1,7 @@
 import ChSelection from "./components/ChallengeSelection";
 import ColorSelection from "./components/ColorSelection";
 import Start from "./components/Start";
+import Timer from "./components/Timer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Start />
       <ColorSelection />
       <ChSelection />
+      <Timer />
     </div>
   );
 }
