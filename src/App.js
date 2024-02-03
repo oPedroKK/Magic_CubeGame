@@ -1,3 +1,4 @@
+import ChSelection from "./components/ChallengeSelection";
 import ColorSelection from "./components/ColorSelection";
 import Start from "./components/Start";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Start />
       <ColorSelection />
+      <ChSelection />
     </div>
   );
 }

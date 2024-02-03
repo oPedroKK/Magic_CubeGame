@@ -13,22 +13,31 @@ function ColorSelection() {
     ]
 
     
-    const [corId, setCorId] = useState(0);
-    const [corNome, setCorNome] = useState(0);
+    const [colorId, setColorId] = useState(0);
+    const [colorName, setColorName] = useState();
+    const [usingColor, setUsingColor] = useState();
 
-    function pegarCor() {
-        setCorId(Math.floor(Math.random() * listaCores.length))
-        setCorNome(listaCores[corId].cor)
-        document.getElementById('colorResult').innerHTML = listaCores[corId].nome
+    function getColor() {
+        setColorId(Math.floor(Math.random() * listaCores.length))
+
+        setUsingColor(listaCores[colorId].cor)
+        setColorName(listaCores[colorId].nome)
         
     }
 
     return (
         <div className={styles.ColorSelection}>
-            <h4>Clique no botão para pegar uma cor</h4>
-            <h1 style={{ color: `${corNome}` }} id="colorResult">#</h1>
+            <h2>Primeiro, pegue uma cor para a base do cubo</h2>
 
-            <button onClick={pegarCor}>Pegar uma cor</button>
+            <div 
+            style={{ backgroundColor: `${usingColor}` }}
+            className={styles.colorSquare}></div>
+
+            <h3>{colorName}</h3>
+
+
+
+            <button onClick={getColor}>Clique aqui para gerar a cor</button>
         </div>
     );
 }

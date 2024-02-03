@@ -1,8 +1,10 @@
 import styles from "./Start.module.css"
 
 function Start(){
-    function ColorOn() {
-        console.log("OIIII")
+
+    function nextLevel() {
+        
+
     }
 
     
@@ -10,7 +12,7 @@ function Start(){
         <div className={styles.start}>
             <h1>CUBE GAME</h1>
 
-            <button onClick={ColorOn}>Continuar</button>
+            <button onClick={nextLevel}>Continuar</button>
         </div>
     )
 }
