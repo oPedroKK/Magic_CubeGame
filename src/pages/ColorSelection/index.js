@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "./ColorSelection.module.css"
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
 function ColorSelection() {
 
@@ -34,7 +35,13 @@ function ColorSelection() {
     }
 
     return (
-        <section className={styles.ColorSelection}>
+        <motion.section 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1}}
+        exit={{opacity: 0}}
+
+        className={styles.ColorSelection}>
             <div>
                 <h2>pegue uma cor para a base do cubo</h2>
 
@@ -57,7 +64,7 @@ function ColorSelection() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

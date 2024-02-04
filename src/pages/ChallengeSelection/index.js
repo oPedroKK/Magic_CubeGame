@@ -1,6 +1,7 @@
 import { useState } from "react"
 import styles from "./ChallengeSelection.module.css"
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
 function ChSelection() {
 
@@ -33,7 +34,13 @@ function ChSelection() {
     }
 
     return (
-        <section className={styles.challenge}>
+        <motion.section
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1}}
+        exit={{opacity: 0}}
+
+        className={styles.challenge}>
             <div>
                 <h2>pegue um desafio para montar o cubo</h2>
                 <h3>{challenge}</h3>
@@ -50,7 +57,7 @@ function ChSelection() {
                     </Link>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

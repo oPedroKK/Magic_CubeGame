@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import styles from "./Timer.module.css"
+import styles from "./Timer.module.css";
+import { motion } from 'framer-motion';
 
 function Timer() {
 
@@ -53,7 +54,13 @@ function Timer() {
     }
 
     return (
-        <section className={styles.timer}>
+        <motion.section 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{ duration: 1}}
+        exit={{opacity: 0}}
+
+        className={styles.timer}>
             <div>
                 <h2>{title}</h2>
                 
@@ -93,7 +100,7 @@ function Timer() {
                 </div>
                 
             </div> 
-        </section>
+        </motion.section>
     )
 }
 
