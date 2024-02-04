@@ -1,0 +1,85 @@
+.ColorSelection {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.ColorSelection a {
+    font-style: none;
+    text-decoration: none;
+}
+
+.ColorSelection > div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0D1117;
+    border: 8px #8700f6 solid;
+    border-radius: 20px;
+
+    color: #ffffff;
+    width: 900px;
+    height: 600px;
+}
+
+.ColorSelection h2 {
+    font-size: 30px;
+    margin-block: 20px;
+}
+
+.ColorSelection p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.colorSquare {
+    border: 8px solid #8700f6;
+    background-color: black;
+    margin-top: 10px;
+
+    width: 100px;
+    height: 100px;
+
+    transition-duration: 1s;
+}
+
+.buttonsCont button {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    margin-block: 20px;
+    color: #ffffff;
+
+    cursor: crosshair;
+
+    width: 180px;
+    height: 50px;
+
+    background-color: #0D1117;
+    border: 4px #8700f6 solid;
+    border-radius: 20px;
+
+    transition-duration: 600ms;
+
+}
+
+.buttonsCont button:hover {
+    color: #8700f6;
+    transition-duration: 600ms;
+
+}
+
+.buttonsCont button:disabled {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+}

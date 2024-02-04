@@ -1,0 +1,53 @@
+.begginin {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    
+}
+
+.begginin div {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 900px;
+    height: 600px;
+
+    background-color: #0D1117;
+    border: 8px #8700f6 solid;
+    border-radius: 20px;
+}
+
+.begginin h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 90px;
+    
+}
+
+.begginin button {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-block: 12px;
+
+    background-color: #0D1117;
+    border: 4px #8700f6 solid;
+    border-radius: 20px;
+
+    cursor: crosshair;
+
+    width: 180px;
+    height: 80px;
+
+    transition-duration: 600ms;
+}
+
+.begginin button:hover {
+    color: #8700f6;
+    transition-duration: 600ms;
+
+}
