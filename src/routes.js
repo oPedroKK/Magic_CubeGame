@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Begginin from "./pages/Begginin";
 import ColorSelection from "./pages/ColorSelection";
 import ChallengeSelection from "./pages/ChallengeSelection";

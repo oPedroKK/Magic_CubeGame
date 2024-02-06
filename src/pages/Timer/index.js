@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styles from "./Timer.module.css";
 import { motion } from 'framer-motion';
 
+// import timers from "../../json/TimersPage.json"
+
 function Timer() {
 
     const [obterTempo, setObterTempo] = useState(0)

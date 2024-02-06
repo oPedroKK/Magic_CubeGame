@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "branco",
+        "cor": "#F7F7F7"
+    },
+    {
+        "nome": "amarelo",
+        "cor": "#F7F700"
+    },
+    {
+        "nome": "verde",
+        "cor": "#00C70E"
+    },
+    {
+        "nome": "azul",
+        "cor": "#0063F7"
+    },
+    {
+        "nome": "vermelho",
+        "cor": "#F70000"
+    },
+    {
+        "nome": "laranja",
+        "cor": "#F76300"
+    }
+]

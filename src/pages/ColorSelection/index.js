@@ -3,18 +3,10 @@ import styles from "./ColorSelection.module.css"
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion'
 
-function ColorSelection() {
+import listaCores from "../../json/colorPages.json"
 
-   const listaCores = [
-        {nome: "branco", cor: "#F7F7F7"},
-        {nome: "amarelo", cor: "#F7F700"},
-        {nome: "verde", cor: "#00C70E"},
-        {nome: "azul", cor: "#0063F7"},
-        {nome: "vermelho", cor: "#F70000"},
-        {nome: "laranja", cor: "#F76300"}
-    ]
+export function ColorSelection() {
 
-    
     const [colorId, setColorId] = useState(0);
     const [colorName, setColorName] = useState();
     const [usingColor, setUsingColor] = useState();
@@ -38,8 +30,8 @@ function ColorSelection() {
         <motion.section 
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        transition={{ duration: 1}}
         exit={{opacity: 0}}
+        transition={{ duration: 1}}
 
         className={styles.ColorSelection}>
             <div>

@@ -3,19 +3,10 @@ import styles from "./ChallengeSelection.module.css"
 import { Link } from "react-router-dom";
 import { motion } from 'framer-motion'
 
+import listaDesafios from "../../json/ChallengePage.json"
+
+
 function ChSelection() {
-
-   const listaDesafios = [
-        "Monte utilizando a base para trás",
-        "Monte utilizando a base para frente",
-        "Monte utilizando a base para direita",
-        "Monte utilizando a base para esquerda",
-        "Monte utilizando a base para frente",
-        "Monte utilizando a base para cima (cubo invertido)",
-        "Monte utilizando a base para baixo (normal)"
-
-    ]
-
     
     const [chId, setChId] = useState(0);
     const [challenge, setChallenge] = useState();
